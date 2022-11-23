@@ -26,8 +26,9 @@ class CreateReviewComponent extends Component {
   render() {
     return (
       <div style={styles.container}>
-        <h2> Egg Ratings </h2>
-        <StarRatingComponent name="rate1" value={this.state.rating} onStarClick={this.onStarClick} />
+        <h2> Egg Review </h2>
+
+        <StarRatingComponent className="star" name="rate1" value={this.state.rating} onStarClick={this.onStarClick} />
         <form>
           <div className="form-group" style={{ marginBottom: '10px' }}>
             <label> First Name </label>
@@ -42,12 +43,26 @@ class CreateReviewComponent extends Component {
             <input type="text" className="form-control" id="formGroupExampleInput3" placeholder="Email Address" />
           </div>
           <div className="form-group" style={{ marginBottom: '10px' }}>
-            <label> Egg Thoughts? </label>
+            <label> How did you use your eggs? </label>
             <textarea id="story" name="story" rows="4" cols="50"></textarea>
+          </div>
+          <div className="form-group" style={{ marginBottom: '10px' }}>
+            <label> Can you notice the Paladino Pasture free range and organic egg difference? </label>
+            <textarea id="story" name="story" rows="4" cols="50"></textarea>
+          </div>
+          <div className="form-group" style={{ marginBottom: '10px' }}>
+            <label> Would you want Paladino Pasture eggs again? </label>
+            <textarea id="story" name="story" rows="4" cols="50"></textarea>
+          </div>
+          <div className="form-group" style={{ marginBottom: '10px' }}>
+            <label> Please rate the eggs overall on 1-5 stars: </label>
+            <div>
+              <StarRatingComponent name="rate1" value={this.state.rating} onStarClick={this.onStarClick} />
+            </div>
           </div>
           <div className="center">
             <button className="btn btn-success" onClick={this.saveEmployee} style={{ marginLeft: '10px' }}>
-              Save
+              Submit
             </button>
             <button className="btn btn-danger" onClick={this.cancelEmployee} style={{ marginLeft: '10px' }}>
               Cancel

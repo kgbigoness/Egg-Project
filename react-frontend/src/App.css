@@ -72,3 +72,7 @@ textarea {
 .center {
   text-align: center;
 }
+
+.nav {
+  position: sticky;
+}
