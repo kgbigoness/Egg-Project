@@ -46,29 +46,25 @@ class ListReviewsComponent extends Component {
   render() {
     return (
       <div>
+        <h2 className="left" style={{ margin: '1em' }}>
+          {' '}
+          Egg Reviews{' '}
+        </h2>
         <CardColumns id="cards-container">
           {this.state.reviewers.map((item, index) => (
             <Card>
               {console.log(item.responses)}
               <CardBody>
                 <StarRatingComponent name="rate1" value={item.responses.rating} />
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
+                <CardSubtitle className="mb-2 text-primary" tag="h6">
                   {item.firstName + ' ' + item.lastName}
                 </CardSubtitle>
-                <CardText>
-                  {' '}
-                  How did you use your eggs? <br />
-                  {item.responses.q1}
-                </CardText>
-                <CardText>
-                  {' '}
-                  Can you notice the Paladino Pasture free range and organic egg difference? <br /> {item.responses.q2}
-                </CardText>
-                <CardText>
-                  {' '}
-                  Would you want Paladino Pasture eggs again? <br />
-                  {item.responses.q3}
-                </CardText>
+                <CardText style={{ margin: '0' }}> How did you use your eggs?</CardText>
+                <CardText className="mb-2 text-muted">{item.responses.q1}</CardText>
+                <CardText style={{ margin: '0' }}> Can you notice the Paladino Pasture free range and organic egg difference?</CardText>
+                <CardText className="mb-2 text-muted">{item.responses.q2}</CardText>
+                <CardText style={{ margin: '0' }}>Would you want Paladino Pasture eggs again?</CardText>
+                <CardText className="mb-2 text-muted"> {item.responses.q3} </CardText>
               </CardBody>
             </Card>
           ))}
