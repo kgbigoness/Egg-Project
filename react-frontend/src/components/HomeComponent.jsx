@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import ReviewsComponent from './ReviewsComponent';
 import logo from '../images/pic.jpg';
 
 class HomeComponent extends Component {
@@ -16,15 +17,16 @@ class HomeComponent extends Component {
           {/* <h2 className="center" style={{ margin: '1em' }}>
             Paladino's Pasture
           </h2> */}
-          <div class="center col-md-12" style={{ margin: '1em' }}>
-            <div class="card-body">
-              <h4 class="card-title">Paladino's Pasture</h4>
-              <h6 class="card-subtitle mb-2 text-muted">AJ & Kayla</h6>
-              <p class="card-text">
+          <div className="center col-md-12" style={{ margin: '1em' }}>
+            <div className="card-body">
+              <h4 className="card-title">Paladino's Pasture</h4>
+              <h6 className="card-subtitle mb-2 text-muted">AJ & Kayla</h6>
+              <p className="card-text">
                 We take great pide in our chickens and treat them with the best of care. <br />
                 We hope you enjoyed the eggs!
               </p>
             </div>
+            <ReviewsComponent></ReviewsComponent>
           </div>
         </div>
       </div>
