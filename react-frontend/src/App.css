@@ -90,3 +90,30 @@ textarea {
 .nav {
   position: sticky;
 }
+
+.card {
+  width: 98%;
+  margin: 1em;
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: x-large;
+  font-weight: 800;
+  text-align: left;
+}
+.reviews-top {
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+.user-details {
+  align-items: center;
+  display: flex;
+}
+
+.avatar {
+  border-radius: 90px;
+  width: 60px;
+  height: 60px;
+  margin: 2px;
+}
