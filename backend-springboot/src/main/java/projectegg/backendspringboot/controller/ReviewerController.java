@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import projectegg.backendspringboot.model.Reviewer;
 import projectegg.backendspringboot.repository.ReviewerRepository;
 
-// @CrossOrigin(origins = "http://localhost:3000")
+// @CrossOrigin(origins = "https://main.d3jhuaysskpva.amplifyapp.com")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@CrossOrigin(origins = "https://main.d3jhuaysskpva.amplifyapp.com")
 @RequestMapping("/api/v1/")
 public class ReviewerController {
 
