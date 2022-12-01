@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-const EMPLOYEE_API_BASE_URL = 'http://localhost:8080/api/v1/reviewers';
+// const EMPLOYEE_API_BASE_URL = 'http://localhost:8080/api/v1/reviewers';
 // const EMPLOYEE_API_BASE_URL = 'https://main.d3jhuaysskpva.amplifyapp.com/api/v1/reviewers';
+const EMPLOYEE_API_BASE_URL = 'https://egg-system-app.herokuapp.com/api/v1/reviewers';
 
 class ReviewerService {
   getReviewers() {
